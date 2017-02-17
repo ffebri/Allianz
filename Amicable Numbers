@@ -24,4 +24,5 @@ int SumOfDivisors(int number){
         }
     }
     return sum_div;
+    
 }
