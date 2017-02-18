@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Challenge</h1>
+
+<pre>
+<script language="JavaScript">
+var i, j, k, l;
+for (i = 0; i <= 9; i++) {
+  if (i == 0) {
+    for (l = 0; l < 8; l++) {
+      document.write(" ");
+    }
+    document.write("*\n");
+	} else {
+	    for (j = 8; j >= i; j--) {
+	      document.write(" ");
+	    }
+	    for (k = 1; k <= i-1; k++) {
+	      document.write("#0");
+	    }
+	    document.write("#");
+	    document.write("\n");
+	  }
+}
+</script></pre>
+
+</body>
+</html>
