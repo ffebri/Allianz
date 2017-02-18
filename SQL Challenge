@@ -1,0 +1,2 @@
+select SCHOOL_NAME,LENGTH(SCHOOL_NAME) from SCHOOLS order by Length(SCHOOL_NAME) asc  LIMIT 1 ; 
+select SCHOOL_NAME,LENGTH(SCHOOL_NAME) from SCHOOLS order by Length(SCHOOL_NAME) desc  LIMIT 1 ;
