@@ -1,28 +1,30 @@
 #include<stdio.h>
 #include<math.h>
 
-int SumOfDivisors(int number);
+int sumOfDivisors(int number);
+
 int main(){
-    int A,B=1,SumOf_amic_num=0,index=0;
-    int amic_num[100]={0};
-    for(A=2;A<=10000;A++){
-        B=SumOfDivisors(A);
-        if(A==SumOfDivisors(B) && A!=B)
-            SumOf_amic_num=SumOf_amic_num+A;
+    int A, B=1, sum=0, index=0;
+    
+    for(A=2; A<=10000; A++){
+        B=sumOfDivisors(A);
+        if(A==sumOfDivisors(B) && A!=B)
+            sum=sum+A;
     }
-    printf("The sum of all the amicable numbers under 10000 = %d",SumOf_amic_num);
+    printf("The sum of all the amicable numbers under 10000 = %d", sum);
     return 0;
 }
-int SumOfDivisors(int number){
-    int sum_div=1,div1;
-    for(int div=2;div<=sqrt(number);div++){
-        if(number%div==0){
-            sum_div=sum_div+div;
-            div1=number/div;
-            if(div1!=div)
-                sum_div=sum_div+div1;
+
+int sumOfDivisors(int number){
+    int X=1, Y, Z;
+    
+    for(int Y=2; Y<=sqrt(number); Y++){
+        if(number%Y==0){
+            X=X+Y;
+            Z=number/Y;
+            if(Z!=Y)
+                X=X+Z;
         }
     }
-    return sum_div;
-    
+    return X;
 }
