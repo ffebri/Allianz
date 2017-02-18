@@ -1,6 +1,6 @@
 //This application was created with multiple applications
 //and software such as Sublime Text 2, MySQL database, PHP 5.2, javscript, CSS and HTML. 
-//Now, I'll show the source code to search books by user.
+//Now I'll show the source code to search books by user.
 
 <?php
 if ($_GET['module']=='hasilcari'){
